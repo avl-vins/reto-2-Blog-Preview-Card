@@ -38,22 +38,25 @@ Tabla de contenidos:
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
 body {
-	
+	width: 100vw;
+	height: 100vh;
 	font-family: var(--primary-font-family);
 	background-color: var(--yellow-color);
 	color: var(--black-color);
 	font-size: var(--font-size);
 	line-height: var(--lh-text);
 	font-size: var(--font-size);
-	
+	min-width: 320px;
+	overflow: hidden;
 }
 
 .contenedor{
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
 }
 .card{
 	width:400px;
@@ -104,6 +107,14 @@ padding:0 0 1rem 0;
 }
 .card__footer img{
 	width: 40px;
+}
+@media (max-width:768px){
+	body{
+		width: 100%;
+	}
+	.contenedor{
+		padding: 2rem;
+	}
 }
 /* ------------------------
 Diseño: Frontend Mentor🎨
