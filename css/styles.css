@@ -11,6 +11,13 @@ Tabla de contenidos:
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
 
 
+*,::before,::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
 /* ----- Variables ----- */
 * {
 	/* --- colores primarios --- */
@@ -23,7 +30,7 @@ Tabla de contenidos:
 
 	--primary-font-family: 'Figtree', sans-serif;	
 	--lh-text: 22px;
-	--font-size: 16rem;
+	--font-size: 16px;
 }
 
 
@@ -31,14 +38,73 @@ Tabla de contenidos:
 /* ----- Estilos generales ----- */
 /* ----------------------------- */
 body {
+	
 	font-family: var(--primary-font-family);
 	background-color: var(--yellow-color);
 	color: var(--black-color);
 	font-size: var(--font-size);
 	line-height: var(--lh-text);
 	font-size: var(--font-size);
+	
 }
 
+.contenedor{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card{
+	width:400px;
+	height: auto;
+	background-color: var(--white-color);
+	border-radius: 10px;
+	padding:1.5rem;
+	border: 2px solid var(--grey-color);
+	box-shadow:10px 10px var(--black-color);
+}
+.card__header{
+padding:0 0 1rem 0;
+}
+.card__header svg{
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+.body__tag{
+	
+
+} 
+.body__tag label{
+	background-color: var(--yellow-color);
+	font-weight: 800;
+	padding: .5rem .8rem;
+	border-radius: 5px;
+	font-size: .875rem;
+	
+}
+.body__fecha{
+	font-size: .875rem;
+	margin: 0;
+	padding: 1rem 0;
+}
+.body__titulo{
+	padding: 0 0 1rem;
+}
+.body__texto{
+	color: var(--grey-color);
+	font-size: 1rem;
+}
+.card__footer{
+	display: flex;
+	align-items: center;
+	gap:.75rem;
+	padding: 1rem 0 0 ;
+}
+.card__footer img{
+	width: 40px;
+}
 /* ------------------------
 Diseño: Frontend Mentor🎨
 Desarrollo: Frontend Club🔥
