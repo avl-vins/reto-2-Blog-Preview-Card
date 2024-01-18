@@ -75,10 +75,7 @@ padding:0 0 1rem 0;
 	height: auto;
 	border-radius: 10px;
 }
-.body__tag{
-	
 
-} 
 .body__tag label{
 	background-color: var(--yellow-color);
 	font-weight: 800;
@@ -95,6 +92,11 @@ padding:0 0 1rem 0;
 .body__titulo{
 	padding: 0 0 1rem;
 }
+.body__titulo:hover{
+	cursor:pointer;
+	color: var(--yellow-color);
+	
+}
 .body__texto{
 	color: var(--grey-color);
 	font-size: 1rem;
@@ -108,6 +110,7 @@ padding:0 0 1rem 0;
 .card__footer img{
 	width: 40px;
 }
+
 @media (max-width:768px){
 	body{
 		width: 100%;
